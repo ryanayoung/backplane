@@ -10,6 +10,16 @@
 	Email:		RyanaYoung81@gmail.com
 ******************************************************************************/
 
+/*=============================================================================
+				TODO
+				
+	-RxID needs to be updated, as well as masks edited
+	-a lookup table of all of the id's.  
+		-Actually, might want to make tCAN structs for each device
+		and function.  Possible as it's own header to reuse in
+		everyone's code.
+=============================================================================*/
+
 #define F_CPU 16000000UL // 16MHz clock from the debug processor
 #include <avr/io.h>
 #include <util/delay.h>
@@ -19,8 +29,7 @@
 
 /******************************************************************************
 	CANBUS ID definition|
-		change values for different devices so that M can talk to S and
-		visa versa
+		
 ******************************************************************************/
 //RxID is your device ID that you allow messages to receive
 //uint8_t RxID = 0x10;  //M
